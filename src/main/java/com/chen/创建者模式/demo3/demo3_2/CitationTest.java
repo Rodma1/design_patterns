@@ -3,7 +3,7 @@ package com.chen.创建者模式.demo3.demo3_2;
 /**
  * @author: 那就叫小智吧
  * @date: 2022/3/9 0:45
- * @Description:
+ * @Description: 原型模式，复制
  */
 public class CitationTest {
 
