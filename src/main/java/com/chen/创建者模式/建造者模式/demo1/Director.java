@@ -1,4 +1,4 @@
-package com.chen.建造者模式.demo1;
+package com.chen.创建者模式.建造者模式.demo1;
 
 /**
  * @author: 那就叫小智吧
