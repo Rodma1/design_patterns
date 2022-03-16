@@ -3,7 +3,7 @@ package com.chen.结构型模式.适配器模式.类适配器模式.demo2;
 /**
  * @author: 那就叫小智吧
  * @date: 2022/3/17 0:55
- * @Description:
+ * @Description: 适配器
  */
 public class SDAdapterTF implements SDCard{
     private TFCard tfCard;
