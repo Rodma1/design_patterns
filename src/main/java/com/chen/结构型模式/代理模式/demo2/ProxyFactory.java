@@ -10,7 +10,7 @@ import java.lang.reflect.Proxy;
  * @Description: 代理工厂：用来创建代理对象
  */
 public class ProxyFactory {
-
+    // 声明目标对象
     private TrainStation station = new TrainStation();
     // 使用Proxy获取代理对象
     public SellTickets getProxyObject() {
@@ -20,6 +20,9 @@ public class ProxyFactory {
                 Class<?>[] interfaces ： 真实对象所实现的接口，代理模式真实对象和代理对象实现相同的接口
                 InvocationHandler h ： 代理对象的调用处理程序
          */
+        
+
+        // 返回代理对象
         SellTickets sellTickets = (SellTickets) Proxy.newProxyInstance(station.getClass().getClassLoader(),
                 station.getClass().getInterfaces(),
                 new InvocationHandler() {
