@@ -16,8 +16,13 @@ public class Singleton2 {
     // 在成员位置声明静态变量
     private static Singleton2 instance;
 
-    static  {
-        instance = new Singleton2();
+
+    static {
+        try {
+            instance = new Singleton2();
+        } catch (Exception e) {
+            throw new RuntimeException("创建单例实例时发生异常");
+        }
     }
 
     // 对外提供静态方法获取该对象
