@@ -7,9 +7,9 @@ package com.chen.创建者模式.demo2.factorypattern;
  */
 public class Laptop extends Computer{
 
-    private String memory;
+    private final String memory;
 
-    private String disk;
+    private final String disk;
 
     public Laptop(String memory, String disk) {
         this.memory = memory;

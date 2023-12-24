@@ -10,7 +10,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Computer pc = ComputerFactory.getComputer("pc", "16 GB", "1 TB");
+        Computer pc = ComputerFactory.getComputer("pc", "17 GB", "1 TB");
 
         Computer laptop = ComputerFactory.getComputer("laptop", "32 GB", "512 GB");
 
