@@ -12,12 +12,14 @@ public class CitationTest {
         Citation c1 = new Citation();
         c1.setName("小智");
         Citation c2 = c1.clone();
-        System.out.println(c1==c2);
+        System.out.println(c1.getClass()==c2.getClass());
         c2.setName("小陈");
+        System.out.println(String.valueOf(c1.hashCode()));
+        System.out.println(String.valueOf(c2.hashCode()));
 
-        System.out.println(c1.getName());
+        System.out.println(c1.getName().hashCode());
 
-        System.out.println(c2.getName());
+        System.out.println(c2.getName().hashCode());
 
         System.out.println(c1==c2);
 
