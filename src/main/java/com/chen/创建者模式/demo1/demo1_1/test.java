@@ -12,6 +12,7 @@ public class test {
         Singleton1.getInstance();
 
         Singleton2.getInstance();
+        
 
     }
 
